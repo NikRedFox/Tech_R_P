@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
     .footer-links-container{
-        color: var(--color-neutral-white);
-        background-color: var(--color-neutral-black); 
+        color: var(--color-neutral-01);
+        background-color: var(--color-neutral-02); 
         display:  flex;
         height: 490px;
         padding: 0px 22px;
@@ -63,13 +63,13 @@ const StyledFooter = styled.footer`
     }
     .footer-links-list a{
         text-decoration: none;
-        color: var(--color-neutral-white);
+        color: var(--color-neutral-01);
     }
 
     .footer-footer{
         display: flex;
-        color: var(--color-neutral-white);
-        background-color: var(--color-neutral-black); 
+        color: var(--color-neutral-01);
+        background-color: var(--color-neutral-02); 
         justify-content: space-between;
         padding: 5px 22px;
         font-size: var(--footer-links2);
@@ -82,7 +82,7 @@ const StyledFooter = styled.footer`
 
     .tos-box a{
         text-decoration: none;
-        color: var(--color-neutral-white);
+        color: var(--color-neutral-01);
     }
 `
 

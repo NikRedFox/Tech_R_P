@@ -4,9 +4,9 @@ const StyledButton = styled.button`
     width: ${(props) => props.width || "200px"};
     font-size: ${(props) => props.fontSize || "16px"};
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-neutral-04);
     border-radius: 4px;
-    color: #000000;
+    color: var(--color-neutral-02);
     cursor: pointer;
 `
 

@@ -2,19 +2,20 @@ import styled from 'styled-components';
 
 const StyledInput = styled.input`
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-neutral-04);
     border-radius: 4px;
     width: ${(props) => props.width || "200px"};
-    font-size: 16px;
+    height: ${(props) => props.height || "36px"};
+    font-size: ${(props) => props.fontSize || "16px"};
 
     &:focus {
         outline: none;
-        border-color: #00ADEF; 
+        border-color: var(--color-tertiary-01); 
   }
 `;
 
-export default function Button({type = 'text', width, ...props}){
+export default function Input({type = 'text', width, height, fontSize, ...props}){
     return(
-        <StyledInput type={type} width={width} {...props}/>
+        <StyledInput type={type} width={width} height={height} fontSize={fontSize} {...props}/>
     )
 };
