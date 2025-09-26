@@ -1,142 +1,150 @@
-
 import styled from 'styled-components';
+import Logo from '../assets/images/Logo-TechRP-2.svg';
+import FaceIcon from '../assets/images/Face-logo.svg';
+import InstaIcon from '../assets/images/Insta-logo.svg';
+import TwitterIcon from '../assets/images/Twitter-logo.svg';
+import LinkedinIcon from '../assets/images/Linkedin-logo.svg';
+import InputCustom from '../components/Input';
+import ButtonCustom from '../components/Button';
 
-const StyledFooter = styled.footer`
-    .footer-links-container{
-        color: var(--color-neutral-01);
-        background-color: var(--color-neutral-02); 
-        display:  flex;
-        height: 490px;
-        padding: 0px 22px;
-        justify-content: space-between;
-        margin-top: 140px;
-    }
+const StyledFooter = styled.footer`  
+`
 
-    .logo-container{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+const FooterLinksContainer = styled.div`
+    color: var(--color-neutral-01);
+    background-color: var(--color-neutral-02); 
+    display:  flex;
+    height: 490px;
+    padding: 20px 22px;
+    justify-content: space-around;
+     margin-top: 140px;
+`
 
-    .logo-container img{
+const LogoContainer = styled.div`    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 535px;
+
+    img{
         width: 25%;
-    }
+    }    
+`
 
-    .logo-container p:nth-of-type(2){
-        width: 535px;
-    }
+const FooterButtonBox = styled.div`
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-    .footer-button-box{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .footer-button-box input{
+    input{
         width: 342px;
         height: 43px;
         border-radius: 20px;
         padding-left: 20px;
     }
 
-    .footer-button-box button{
+    button{
         width: 89px;
         height: 43px;
         border-radius: 20px;
-    }
+    }    
+`
 
-    .footer-links-list{
-        display: flex;
-        gap: 100px;  
-        margin-top: 50px;  
-        font-size: var(--footer-links2);
-    }
+const FooterLinksList = styled.div`
+    display: flex;
+    gap: 100px;  
+    margin-top: 50px;  
+    font-size: var(--footer-links2);  
 
-    .footer-links-list ul{
+    ul{
         display:  flex;
         flex-direction: column;
         list-style: none;
         gap: 50px;
     }
 
-    .footer-links-list li:nth-of-type(1){
+    li:nth-of-type(1){
         font-size: var(--footer-links1);
     }
-    .footer-links-list a{
+
+    a{
         text-decoration: none;
         color: var(--color-neutral-01);
-    }
+    }    
+`
 
-    .footer-footer{
-        display: flex;
-        color: var(--color-neutral-01);
-        background-color: var(--color-neutral-02); 
-        justify-content: space-between;
-        padding: 5px 22px;
-        font-size: var(--footer-links2);
-    }
+const FooterBottom = styled.div`
+    display: flex;
+    color: var(--color-neutral-01);
+    background-color: var(--color-neutral-02); 
+    justify-content: space-between;
+    padding: 5px 22px;
+    font-size: var(--footer-links2);
+    
+`
 
-    .tos-box{
-        display: flex;
-        gap: 23px;    
-    }
+const ToSBox = styled.div`
+    display: flex;
+    gap: 23px;        
 
-    .tos-box a{
+    a{
         text-decoration: none;
         color: var(--color-neutral-01);
     }
 `
 
-export default function Footer(){
-    return(
+export default function Footer() {
+    return (
         <>
             <StyledFooter>
-                <div className="footer-links-container">
-                    <div className="logo-container">
-                        <img src="./src/assets/images/global/Logo-TechRP.svg" alt=""/>
-                        
-                        <p>Se inscreva em nosso site para obter novas nóticias</p>
-                        <div className="footer-button-box">
-                            <input type="text" placeholder="Seu e-mail"/>
-                            <button>Enviar</button>
-                            
-                        </div>
-                    <p>Se inscrevendo, você concorda com nossa Política de Privacidade e concorda em receber atualizações.</p>
-                    </div>
+                <FooterLinksContainer>
+                    <LogoContainer>
+                        <img src={Logo} alt="Logo-Tech-R&P" />
 
-                    <div className="footer-links-list">
+                        <p>Se inscreva em nosso site para obter novas notícias</p>
+                        <FooterButtonBox>
+                            <InputCustom
+                                placeholder="Seu e-mail"
+                                width='342px'
+                            />
+                            <ButtonCustom>Enviar</ButtonCustom>
+                        </FooterButtonBox>
+                        <p>Se inscrevendo, você concorda com nossa Política de Privacidade e concorda em receber atualizações.</p>
+                    </LogoContainer>
+
+                    <FooterLinksList>
                         <ul>
                             <li>Links Rápidos</li>
-                            <li><a href="./src/pages/products.html">Nossos Produtos</a></li>
-                            <li><a href="./src/pages/about.html">Sobre nós</a></li>
-                            <li><a href="./src/pages/page-contact_us.html">Contato</a></li>
-                            <li><a href="./src/pages/descarte-responsavel.html">Descarte Responsavel</a></li>  
+                            <li><a href="/">Nossos Produtos</a></li>
+                            <li><a href="/">Sobre nós</a></li>
+                            <li><a href="/">Contato</a></li>
+                            <li><a href="/">Descarte Responsavel</a></li>
                         </ul>
 
                         <ul>
                             <li>Mídias Sociais</li>
-                            <li><img src="./src/assets/images/home/Face-logo.svg" alt=""/><a href=""> Facebook</a></li>
-                            <li><img src="./src/assets/images/home/Insta-logo.svg" alt=""/><a href=""> Instagram</a></li>
-                            <li><img src="./src/assets/images/home/Twitter-logo.svg" alt=""/><a href=""> Twitter</a></li>
-                            <li><img src="./src/assets/images/home/Linkedin-logo.svg" alt=""/><a href=""> Linkedln</a></li>
+                            <li><img src={FaceIcon} alt="" /><a href="/"> Facebook</a></li>
+                            <li><img src={InstaIcon} alt="" /><a href="/"> Instagram</a></li>
+                            <li><img src={TwitterIcon} alt="" /><a href="/"> Twitter</a></li>
+                            <li><img src={LinkedinIcon} alt="" /><a href="/"> Linkedln</a></li>
                         </ul>
 
                         <ul>
                             <li>Informações Adicionais</li>
                             <li>Endereço: Rua Oscar ,900</li>
-                            <li>Email: techrp.suporte@gmail.com</li>                 
+                            <li>Email: techrp.suporte@gmail.com</li>
                         </ul>
-                    </div>
-                </div>
+                    </FooterLinksList>
+                </FooterLinksContainer>
 
-                <div className="footer-footer">
+                <FooterBottom>
                     <p>© 2025 Tech R&P. All rights reserved.</p>
-                    <div className="tos-box">
+                    <ToSBox>
                         <a href="">Privacy Policy</a>
                         <a href="">Terms of Service</a>
                         <a href="">Cookie Settings</a>
-                    </div>           
-                </div>
+                    </ToSBox>
+                </FooterBottom>
             </StyledFooter>
-    </>
+        </>
     )
 }

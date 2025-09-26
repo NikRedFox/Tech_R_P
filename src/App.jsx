@@ -9,8 +9,7 @@ function App() {
   return (
     <>      
       <MainLayout>
-        <Input width="100px"/>
-        <Button width="100px" fontSize="32px"/>
+        
       </MainLayout>
     </>
   )

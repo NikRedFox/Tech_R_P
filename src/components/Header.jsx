@@ -96,22 +96,33 @@ export default function Header() {
                     </HeaderItems>
 
                     <SearchWrapper>
-                        <InputCustom width="900px" height="45px" fontSize="var(--paragraph-big)" />
-                        <Button><img src={SearchIcon} alt="Search-icon" /></Button>
+                        <InputCustom 
+                            placeholder ="Faça sua pesquisa"
+                            width="900px" 
+                            height="45px" 
+                            fontSize="var(--paragraph-big)" 
+                        />
+                        <Button width="50px"><img src={SearchIcon} alt="Search-icon" /></Button>
                     </SearchWrapper>
                 </HeaderLinks>
 
                 <ButtonWrapper>
                     <ButtonContainer>
-                        <a href="/"><img src={PerfilIcon} alt="Perfil-icon" title="Login-icon" /></a>
+                        <a href="/">
+                            <img src={PerfilIcon} alt="Perfil-icon" title="Login-icon" />
+                        </a>
                     </ButtonContainer>
 
                     <ButtonContainer>
-                        <a href="/"><img src={IconWhats} alt="Whatsapp-icon" title="Whatsapp-icon" /></a>
+                        <a href="/">
+                            <img src={IconWhats} alt="Whatsapp-icon" title="Whatsapp-icon" />
+                        </a>
                     </ButtonContainer>
 
                     <ButtonContainer>
-                        <a href="/"><img src={LoginIcon} alt="Login-icon" title="Login-icon" /></a>
+                        <a href="/">
+                            <img src={LoginIcon} alt="Login-icon" title="Login-icon" />
+                        </a>
                     </ButtonContainer>
                 </ButtonWrapper>
 
