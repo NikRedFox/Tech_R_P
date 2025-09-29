@@ -30,27 +30,25 @@ body{
     --color-neutral-opacity: rgba(17, 17, 16, 0.95);
 
     --font: 'Inter';
-    --headline1-big: 64px;
-    --headline1-medium: 48px;
-    --headline1-weight: 700;
+    --headline-1: 64px;
+    --headline-2: 48px;
+    --headline-3: 40px;
+    --headline-4: 33px;
+    --headline-5: 28px;
 
-    --headline2-big: 40px;
-    --headline2-medium: 33px;
-    --headline2-normal: 26px;
+   --headlines-weight: 700;
 
-    --paragraph-big:24px;
-    --paragraph-normal: 20px;
-    --paragraph-medium: 16px;
-    --paragraph-small: 12px;
-    --paragraph-tiny: 10px;
+   --body-big:24px;
+   --body-normal: 20px;
+   --body-medium: 16px;
 
-    --button-text: 28px;
-    --button-medium:24px;
-    --button-small-second:18px;
-    --button-text-small: 15px;
 
-    --header-links: 24px;
-    --footer-links1: 16px;
-    --footer-links2: 14px;
+   --button-normal:18px;
+   --button-small: 15px;
+
+   --caption-normal: 12px;
+   --caption-medium:14px
+   --caption-small: 10px;
+
 
 }
