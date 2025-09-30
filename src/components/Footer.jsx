@@ -53,7 +53,7 @@ const FooterLinksList = styled.div`
     display: flex;
     gap: 100px;  
     margin-top: 50px;  
-    font-size: var(--footer-links2);  
+    font-size: var(--caption-normal);  
 
     ul{
         display:  flex;
@@ -63,7 +63,7 @@ const FooterLinksList = styled.div`
     }
 
     li:nth-of-type(1){
-        font-size: var(--footer-links1);
+        font-size: var(--body-medium);
     }
 
     a{
@@ -78,7 +78,7 @@ const FooterBottom = styled.div`
     background-color: var(--color-neutral-02); 
     justify-content: space-between;
     padding: 5px 22px;
-    font-size: var(--footer-links2);
+    font-size: var(--caption-medium);
     
 `
 

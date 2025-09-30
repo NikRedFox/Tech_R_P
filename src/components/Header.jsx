@@ -36,7 +36,7 @@ const HeaderItems = styled.ul`
     a{
         text-decoration:  none;
         color: var(--color-neutral-01);
-        font-size: var(--header-links);
+        font-size: var(--body-big);
     }
     
 `

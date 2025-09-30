@@ -1,5 +1,5 @@
 import './App.css'
-import './global.css'
+import './index.css'
 import MainLayout from './layouts/MainLayout'
 import Input from './components/Input'
 import Button from './components/Button'
